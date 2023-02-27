@@ -1,0 +1,149 @@
+.menu{  /* ESTILOS DEL CONTENEDOR DEL MENU DE NAVEGACIÓN */
+    background: rgba(201, 159, 134, 0.979);  
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    text-align: justify;
+    position: sticky; /* Al momento de desplazarse a la parte inferior de la pagina esta caracteristica permite que el menu de navegación se siga visualizando */
+    border: 3px solid white;
+    top: 0%; /* Permite que se mantenga el menu de navegación en la parte superior de la pantalla */
+    
+}
+
+nav { /* ESTILO QUE DESPLAZA EL LISTADO DEL MENU DE NAVEGACIÓN AL COSTADO DEREECHO DEL CONTENEDOR CON LA CLASE "menu */
+    float: right;
+}
+
+nav ul li /* ESTILO DE LAS OPCIONES DEL MENU DE NAVEGACIÓN */ {
+    list-style: none;
+    margin-left: 20px;
+    padding: 15px 0px;
+    float: left;
+    position: relative;
+}
+
+nav ul li a  /* ESTILO DE LOS ENLACES DE LAS OPCIONES DEL MENU DE NAVEGACIÓN */{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul li a::before /* ESTILO QUE AGREGA LA BARRA QUE SE DESPLIEGA AL MOMENTO DE HACER HOVER EN ALGUNA DE LAS OPCIONES DEL MENU DE NAVEGACIÓN */ {
+
+    display: block;
+    content: " " ;
+    width: 0;
+    background: rgb(0, 0, 0) ;
+    height: 5px;
+    top: 0 ;
+    position: relative;
+    transition: width 0.5s ; /* TIEMPO QUE TARDA LA BARRA EN OBTENER EL 100% DE SU WIDTH (ANCHO) */
+
+}
+
+nav ul li a:hover::before /* FUNCION HOVER QUE PERMITE MODIFICARLE EL ANCHO A LA BARRA MENCIONADA ANTERIORMENTE AL MOMENTO DE POSICIONAR EL CURSOR EN LAS OPCIONES DEL MENU DE NAVEGACIÓN */ {
+
+    width: 100%;
+
+}
+
+#inicio /* ESTILOS DEL CONTENEDOR PRINCIPAL */{
+background-color: rgb(4, 137, 146);
+width: 100;
+height: 500;
+}
+
+
+
+#generos { /* ESTILO CORRESPONDIENTE A LA ETIQUETA p CON EL CONTENIDO DE "Generos" EN ESTE BLOQUE SE EDITO EL TAMAÑO DE LA FUENTE Y SE LE AGREGO UN COLOR OSCURO Y FUE POSICIONADO UN POCO A LA DERECHA DE SU UBICACION INICIAL */
+
+    color: #000000;
+    margin-left: 8%;
+    font-size: 20pt;
+
+}
+
+#cuarta { /* ESTILOS APLICADOS AL CONTENEDOR INFERIOR QUE TIENE COMO INTENCIÓN UN APARTADO DE CONTACTO Y REDES SOCIALES DE LA PAGINA DONDE SE EVIDENCIA EL TAMAÑO QUE ESTA OCUPA EN BASE A LA PANTALLA Y LOS COLORES DE FONDO Y BORDES QUE ESTE TIENE */
+    
+    background-color: rgba(201, 159, 134, 0.979);
+    width: 100;
+    height: 500; 
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+
+*{ /* ESTE ESTILO QUITA LAS MARGENES EXTERIORES E INTERIORES DE TODOS LOS ELEMENTOS DENTRO DEL ARCHIVO HTML */
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+  *.pi { /* ESTE BLOQUE DE CODIGO APLICA LAS CARACTERISTICAS A TODOS LOS ELEMENTOS QUE TENGAN LA CLASE "pi" EDITANDO SU TAMAÑO CON EL height, SU POSICIÓN EN BASE A LA ZONA IZQUIERDA DEL CONTENEDOR CON LA CARACTERISTICA left Y LA CARACTERISTICA DE positions: absolute PARA QUE SE PUEDA APLICAR EL DESPLIEGUE DE ESTE ELEMENTO CON LA CARACTERISTICA left */
+    
+    height: 100px;
+    left: 580px;
+    position: absolute;
+    top: 125px;
+    width: 250px;
+  }
+
+  *.ps { /* ESTE BLOQUE REALIZA LO MISMO QUE EL ANTERIOR BLOQUE DIFERENCIANDOLOS EN QUE ESTE EN ESPECIFICO TIENE OTROS PARAMETROS PERO SE ESTAN ESTILANDO LAS MISMAS CARACTERISTICAS Y APLICANDOLAS A TODOS LOS ELEMENTOS CUYA CLASE SEA ".ps" */
+    
+    height: 100px;
+    left: 680px;
+    position: absolute;
+    top: 220px;
+    width: 250px;
+  }
+
+  *.appl /* ESTE BLOQUE CUENTA CON LAS MISMAS CARACTERISTICAS QUE LAS ANTERIORES PERO EN ESTE SE EVIDENCIA LA PRESENCIA DE UN NUEVO PARAMETRO DE LA CARACTERISTICA "position" SIENDO ESTE "relativo" POR LO TANTO SE ADAPTARA EN BASE A SU CONTENEDOR Y NO EN BASE A LA PAGINA */ {
+    
+    height: 150px;
+    left: 1030px;
+    position: relative;
+    top: -100px;
+    width: 150px;
+  }
+
+
+/* estilos 2.0 */
+
+   *.t2 { /* APLICA EL ESTILO A TODOS LOS ELMENTOS CON LA CLASE "t2" CAMBIANDO EN ELLOS EL COLOR DEL FONDO DANDOLE COMO ANCHO TAMBIEN EL 100% DEL CONTENEDOR Y UNA POSICION EN BASE A ESE CONTENEDOR */
+    background-color: rgb(4, 137, 146);
+    position: relative;
+    width: 100%;
+  }
+
+  #temas { /* INDICA LA POSICIÓN DEL TITULO "TEMAS" UBICADO EN LA SECCION DE MUSICA TECHNO Y SU TAMAÑO Y COLOR */
+
+    color: #000000;
+    margin-left: 45%;
+    font-size: 50pt;
+  } 
+
+  .fondoartistas{ /* APLICA UN COLOR AL FONDO DEL APARTADO DE ARTISTAS  */
+    background-color: #817369;
+  }
+
+
+
+  .artistas { /* LE PROPORCIONA CARACTERISTICAS ESPECIFICAS COMO QUE EL CONTENEDOR SEA FLEXIBLE PERMITIENDOLE A ESTE PODER APLICAR LA CARACTERISTICA DE justify-content: center, CENTRANDO DE ESTA FORMA TODO ELEMENTO DENTRO DEL CONTENEDOR */
+
+    display: flex;  
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+
+  }
+
+  .artis { /* EN ESTE BLOQUE SE ESPECIFICA EL COLOR Y TAMAÑO DEL TITULO DE LOS ARTISTAS TOP SEGÚN LA PAGINA */
+    color: #000000;
+    font-size: 25pt;
+  }
+

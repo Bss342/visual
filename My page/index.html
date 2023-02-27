@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- si es html5 se despliegan estos adicionales -->
+    <title>Pagina</title>
+    <!-- aqui se pone el titulo que va a llevar la pagina y que va aparecer en el navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- aqui se inserta la direccion del archivo css para que el codigo html lo lea  -->
+    <script src="script.js"></script>
+</head>
+ <!-- aqui va todo lo que se quiere poner en la "cabeza" de la pagina -->
+<body> +
+    <div class="container-p"> 
+        <header>
+            <nav class="menu">
+                <div class="nav-inputs">
+                    <input type="text" id="inp-search" placeholder="Search"></input>
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sale</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Register</a></li>
+                        <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. -->
+                    </ul>
+                    <!-- "ul" se utiliza para crear listas no ordenadas -->
+                </div>
+                    <!-- "div" seria basicamente una parte especifica del "cuerpo" de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+            </nav>
+            <!-- representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, en este caso con una clase menu -->
+        </header>
+        <!-- aqui va todo lo que quiere poner en el encabezado de la pagina  -->
+        <section class="banners">
+            <img class="banner-p" src="IMG/banner-1.webp" alt="">
+            <!-- aqui se inserta una imagen con una clase para modificar desde el css junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página -->
+        </section>
+        <!-- representa una seccion de la pagina -->
+        <section class="store">
+            <div class="filters">
+                <ul>
+                    <li><a href=""><img src="IMG/Supermercado.webp" alt="" height="200">Supermercado</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                    <li><a href=""><img src="IMG/Televisores&Audio.webp" alt="" height="200">Televisores y audio</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                    <li><a href=""><img src="IMG/Mundo saludable.webp" alt="" height="200">Tecnologia</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                    <li><a href=""><img src="IMG/Electrodomesticos.webp" alt="" height="200">Electrodomesticos</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                    <li><a href=""><img src="IMG/Tecnología.webp" alt="" height="200">Tecnologia</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                    <li><a href=""><img src="IMG/Supermercado.webp" alt="" height="200">Hogar y decoración</a></li>
+                    <!-- "li" declara cada uno de los elementos de una lista mientras que el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. junto con un src que contiene una ruta que apunta a la imagen que quieres poner en la página, con un alto y ancho -->
+                </ul>
+                              <!-- "ul" se utiliza para crear listas no ordenadas -->
+
+            </div>
+             <!-- "div" seria basicamente una parte especifica del "cuerpo" de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+
+            <div class="products">
+                <h3>Productos</h3>
+                <!-- el "h3" podras escribir un subtitulo con un tamaño especifico -->
+                <div class="view">
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <!-- el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. --> 
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">REFISAL</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 2.390</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                            <!-- sirve para crear botones  -->
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                                                        <!-- el "a" crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. --> 
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                               <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">CORONITA</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 19.990</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                                                        <!-- sirve para crear botones  -->
+
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">RIQUISIMO</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 35.590</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                                                        <!-- sirve para crear botones  -->
+
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">REFISAL</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 2.390</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                                                        <!-- sirve para crear botones  -->
+
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">REFISAL</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 2.390</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">REFISAL</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 2.390</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">CORONITA</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 19.990</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                              <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="marca">RIQUISIMO</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <span class="price">$ 35.590</span>
+                             <!-- el "span" Sirve para aplicar estilo al texto o agrupar -->
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                            <span class="marca">CORONITA</span>
+                            <span class="price">$ 19.990</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                            <span class="marca">RIQUISIMO</span>
+                            <span class="price">$ 35.590</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                            <span class="marca">CORONITA</span>
+                            <span class="price">$ 19.990</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                            <span class="marca">RIQUISIMO</span>
+                            <span class="price">$ 35.590</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                            <span class="marca">CORONITA</span>
+                            <span class="price">$ 19.990</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                            <span class="marca">RIQUISIMO</span>
+                            <span class="price">$ 35.590</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                            <span class="marca">CORONITA</span>
+                            <span class="price">$ 19.990</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                            <span class="marca">RIQUISIMO</span>
+                            <span class="price">$ 35.590</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    <div class="row">
+                        <div>
+                            <a href=""><img src="IMG/Productos/Sal.webp" alt="" height="250px"></a>
+                            <span class="name-p">Sal Refisal bolsa x1000g</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                         <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/440069-300-300?v=1762259418&width=300&height=300&aspect=true alt="" height="250px"></a>
+                             <span class="name-p">Cerveza Coronita botella x6und</span>
+                            <span class="marca">CORONITA</span>
+                            <span class="price">$ 19.990</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+ <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/192269-300-300?v=1762259411&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Aceite Riquisimo garrafa x3000ml</span>
+                            <span class="marca">RIQUISIMO</span>
+                            <span class="price">$ 35.590</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+ <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195956-300-300?v=1762259504&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Huevos AA rojos Nápoles x30und</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+ <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->                        <div>
+                            <a href=""><img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/444975-300-300?v=1762259369&width=300&height=300&aspect=true" alt="" height="250px"></a>
+                             <span class="name-p">Papel higiénico Familia acolchamax mega x12 rollos</span>
+                            <span class="marca">REFISAL</span>
+                            <span class="price">$ 2.390</span>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                          <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                    </div>
+                      <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+                </div>
+                  <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+            </div>
+             <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+        </section>
+                <!-- representa una seccion de la pagina -->
+
+        <div class="buy-cart">
+            <a href="#"><img src="IMG/carrito-de-compras (1).png" alt="" height="38px">Buy Now</a>
+        </div>
+    </div>
+     <!-- "div" seria basicamente una parte especifica del "cuerpo", una division de la pagina en el se le modifican aspectos mediante una clase la cual se maneja desde css  -->
+</body>
+<!-- el cuerpo de la pagina en el que podras insertar todo lo que quieres que se vea en el centro de esta basicamente -->
+</html>

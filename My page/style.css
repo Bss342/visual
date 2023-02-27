@@ -1,0 +1,336 @@
+* {
+    /* es el selector universal */
+    margin: 0;
+    /* sirve para darle margen  */
+    padding: 0;
+    /* sirve para dar relleno  */
+    font-family:Arial, Helvetica, sans-serif;
+    /* sirve para darle una fuente al texto  */
+}
+
+:root {
+    --wh: 100%;
+    /* especifica la anchura del area de contenido. */
+
+}
+
+body {
+    overflow-x: hidden;
+    /* dibujar barras de desplazamiento o mostrar el contenido excedente */
+
+}
+
+header {
+    display: flex;
+    /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+    position: fixed;
+    /* hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll. */
+    z-index: 1000;
+    /* indica el orden de un elemento posicionado y sus descendientes. */
+    top: 0%;
+    /* indica la parte de arriba del contenido */
+    width: 100%;
+        /* especifica la anchura del contenido. */
+
+}
+
+.container-p {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    flex-direction: column;
+    /* especifica cómo colocar los objetos flexibles en el contenedor flexible  */
+}
+
+.menu {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    background-color: #43b048;
+    /* define el color de fondo */
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    height: 5rem;
+    /* indica la altura */
+    width: var(--wh);
+    /* especifica la anchura del contenido. */
+
+}
+
+.menu .menu-list {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    justify-content: flex-end;
+    /* define cómo el navegador distribuye el espacio entre y alrededor de los items flex */
+
+    width: 31%; 
+    /* especifica la anchura del contenido. */
+}
+
+.menu .menu-list ul{
+    display: flex;
+            /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+}
+
+.menu .menu-list ul li{
+    list-style: none;
+    /* sirve Para no mostrar ningún marcador en una lista de elementos */
+}
+
+.menu .menu-list ul li a{
+    text-decoration: none;
+    /* sirve para no mostrar la linea del hipervinculo */
+    color: white;
+    /* sirve para dar color  */
+    padding: 30px;
+    /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+    font-size: 1.2rem;
+    /* sirve para el tamaño de la letra  */
+}
+
+.menu .menu-list ul li a:hover {
+    color: rgb(234, 234, 234);
+        /* sirve para dar color  */
+}
+
+.menu .nav-inputs {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    justify-content: flex-end;
+    /* nos va a permitir definir cómo se deben alinear los elementos o flex-items que están dentro del contenedor flex  */
+    width: 67%;
+    /* especifica la anchura del contenido. */
+}
+
+.menu .nav-inputs input {
+    padding: 15px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+    width: 600px;
+    /* especifica la anchura del contenido. */
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    transition: all 200ms;
+    box-shadow: -7px 7px 1px rgba(0, 0, 0, 0.347);
+
+}
+
+.menu .nav-inputs input:focus{
+    background-color: #fdfdfde8;
+      /* define el color de fondo */
+}
+
+.banners {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    margin-top: 78px;
+    width: 100%;
+    /* especifica la anchura del contenido. */
+    height: 397px;
+}
+
+.banners img{
+    width: 100%;
+    /* especifica la anchura del contenido. */
+}
+
+.banner-p {
+    z-index: 100;
+}
+
+.buy-cart {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    position: absolute;
+    right: 0px;
+    left: 91%;
+    top: 93.6%;
+}
+
+.buy-cart a {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    text-decoration: none;
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    background-color: #43b048;
+      /* define el color de fondo */
+    color: white;
+        /* sirve para dar color  */
+    position:fixed;
+    padding: 0px 10px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+    width: 148px;
+    /* especifica la anchura del contenido. */
+    border-radius: 10px;
+    transition: all 200ms;
+}
+
+.buy-cart a:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+      /* define el color de fondo */
+}
+
+.buy-cart img {
+    padding: 10.5px;
+}
+
+.store {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    /* especifica la anchura del contenido. */
+}
+
+.filters {
+    display: grid;
+    padding: 40px 0px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+    height: 20%;
+    width: 100vw;
+    /* especifica la anchura del contenido. */
+    border-right: 1px solid black;
+}
+
+.filters ul {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    /* especifica la anchura del contenido. */
+    gap: 30px;
+}
+
+.filters ul li a {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    justify-content: center;
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    position: sticky;
+    padding: 30px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+    border-radius: 100%;
+    top: 0px;
+    transition: all 200ms;
+}
+
+.filters ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.094);
+      /* define el color de fondo */
+}
+
+.products {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    flex-direction: column;
+    margin-top: 70px;
+    margin: 160px;
+}
+
+.products h3 {
+    color: rgb(72, 72, 72);
+        /* sirve para dar color  */
+    font-size: 2rem;
+    border-bottom: 1px solid #43b048;
+}
+
+.view {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    margin-top: 20px;
+}
+
+.row div {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    flex-direction: column;
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    padding: 10px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+    text-align: center;
+    border: 1PX solid #ccc;
+}
+
+.view div a {
+    display: flex;
+        /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
+
+    justify-content: center;
+    align-items: center;
+    /* alinia los intems en este caso centrados */
+    padding: 20px;
+        /* establece el área de relleno en los cuatro lados de un elemento a la vez */
+
+}
+
+.name-p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.marca {
+    color: #aaa;
+}
+
+.price {
+    font-size: 1.6rem;
+    color: #43b048;
+        /* sirve para dar color  */
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.cart-btn {
+    border: none;
+    margin-top: 10px;
+    padding: 20px 35px;
+    border-radius: 6px;
+    background-color: rgb(255, 241, 44);
+      /* define el color de fondo */
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+    background-color: rgb(232, 219, 39);
+      /* define el color de fondo */
+}
+

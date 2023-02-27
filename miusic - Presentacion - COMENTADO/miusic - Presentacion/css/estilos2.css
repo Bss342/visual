@@ -1,0 +1,28 @@
+*.t2 { /* APLICA EL ESTILO A TODOS LOS ELMENTOS CON LA CLASE "t2" CAMBIANDO EN ELLOS EL COLOR DEL FONDO DANDOLE COMO ANCHO TAMBIEN EL 100% DEL CONTENEDOR Y UNA POSICION EN BASE A ESE CONTENEDOR */
+
+    background-color: rgb(4, 137, 146);
+    left: 30px;
+    position: relative;
+    width: 70px;
+  }
+
+  #temas { /* INDICA LA POSICIÓN DEL TITULO "TEMAS" UBICADO EN LA SECCION DE MUSICA TECHNO Y SU TAMAÑO Y COLOR */
+
+    color: #000000;
+    margin-left: 45%;
+    font-size: 50pt;
+  }
+  
+  .artistas { /* LE PROPORCIONA CARACTERISTICAS ESPECIFICAS COMO QUE EL CONTENEDOR SEA FLEXIBLE PERMITIENDOLE A ESTE PODER APLICAR LA CARACTERISTICA DE justify-content: center, CENTRANDO DE ESTA FORMA TODO ELEMENTO DENTRO DEL CONTENEDOR */
+
+    display: flex;  
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+  }
+
+  .artis { /* EN ESTE BLOQUE SE ESPECIFICA EL COLOR Y TAMAÑO DEL TITULO DE LOS ARTISTAS TOP SEGÚN LA PAGINA */
+
+    font-size: 25pt;
+  }
